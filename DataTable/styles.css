@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 75%;
+    margin: 30px auto;
+}
+
+.header > div{
+    float: right;
+}
+
+div.footer {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    border-bottom: 1px solid black;
+    font-weight: bold;
+    font: 16px;
+    cursor: pointer;
+}
+
+thead > tr > * {
+    width: 200px;
+}
+
+thead:last-child {
+    border-bottom: none;
+    border-top: 1px solid black;
+}
+
+tbody > * {
+    height: 35px;
+    border-bottom: 1px solid gray;
+}
+
+tbody > tr:nth-child(odd) {
+    background-color: lightyellow;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer > p {
+    float: left;
+    padding: 6px 9px;
+}
+
+.pagination {
+    float: right;
+}
+
+.pagination > a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    float: left;
+    padding: 6px 9px;
+}
+
+a:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+a.active{
+    border: 1px solid thistle;
+    background-color: lightyellow;
+}
+
+a.active:hover{
+    background-color: dimgray;
+    color: white;
+}
+
+.desc {
+    content: "";
+    position: absolute;
+    margin: 9px 4px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: gray transparent transparent transparent;    
+}
+
+.asc {
+    content: "";
+    position: absolute;
+    margin: -5px 4px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent gray transparent;    
+}
+
+td > span.desc.active {
+    content: "";
+    position: absolute;
+    margin: 9px 4px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;      
+}
+
+td > span.asc.active {
+    content: "";
+    position: absolute;
+    margin: -5px 4px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;    
+}

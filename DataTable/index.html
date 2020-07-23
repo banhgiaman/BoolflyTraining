@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <label for="entries">Show</label>
+            <select id="entries">
+                <option value="5" selected=true>5</option>
+                <option value="10">10</option>
+            </select>
+            <span>entries</span>
+            <div>
+                <input type="text" placeholder="Search" id="txtSearch"/>
+            </div>
+        </div>
+        <div class="body">
+            <table>
+                <thead>
+                    <tr id="sort">
+                        <td data-sort="name">Name<span class="desc"></span><span class="asc"></span></td>
+                        <td data-sort="position">Position<span class="desc"></span><span class="asc"></span></td>
+                        <td data-sort="office">Office<span class="desc"></span><span class="asc"></span></td>
+                        <td data-sort="age">Age<span class="desc"></span><span class="asc"></span></td>
+                        <td data-sort="startDate">Start Date<span class="desc"></span><span class="asc"></span></td>
+                        <td data-sort="salary">Salary<span class="desc"></span><span class="asc"></span></td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <thead>
+                    <tr>
+                        <td>Name</td>
+                        <td>Position</td>
+                        <td>Office</td>
+                        <td>Age</td>
+                        <td>Start Date</td>
+                        <td>Salary</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="footer">
+            <p>Showing <span id="begin"></span> to <span id="end"></span> of <span id="total"></span> entries</p>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="data.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
