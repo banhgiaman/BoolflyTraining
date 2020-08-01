@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.slider {
+  margin: auto;
+  width: 800px;
+  height: 330px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: -800px;
+  transition: margin-left 0.2s ease-in-out;
+}
+
+li {
+  min-width: 800px;
+  margin:auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: auto;
+  max-width: 800px;
+  max-height: 300px;
+}
+
+.slider a.button {
+  text-decoration: none;
+  margin: auto;
+  color: black;
+  width: 20px;
+  height: 45px;
+  font-size: 20px;
+  padding: 10px 5px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+}
+
+
+.slider a.button:hover {
+  background-color: lightyellow;
+  cursor: pointer;
+}
+
+.slider a.button.forward {
+  margin-left: 780px;
+}
+
+#pagination {
+  margin: auto;
+}
+
+#pagination a {
+  margin: 5px;
+  border-radius: 50%; 
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#pagination a:hover{
+  background-color: lightslategray;
+}
+
+#pagination a.active {
+  background-color: black;
+}
